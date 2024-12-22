@@ -8,18 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">S&S Wanderlust</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#blog">Travel Blog</a></li>
-                <li><a href="#map">Travel Map</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog.html">Travel Blog</a></li>
+                <li><a href="map.html">Travel Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -29,52 +27,53 @@
     </header>
 
     <main>
-        <section id="home" class="welcome-section">
+        <section class="welcome-section">
             <div class="container">
                 <h2>Welcome to Our Journey</h2>
                 <p>Hey there! We're Serhan and Sara, two souls united by our love for travel and adventure. Join us as we share our experiences, stories, and captured moments from around the globe.</p>
+                <div class="featured-sections">
+                    <div class="feature-card">
+                        <img src="images/1.jpg" alt="Travel Blog">
+                        <h3>Travel Blog</h3>
+                        <p>Read about our adventures and travel tips</p>
+                        <a href="blog.html" class="btn">Read Our Stories</a>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/2.jpg" alt="Photo Gallery">
+                        <h3>Photo Gallery</h3>
+                        <p>Browse through our travel memories</p>
+                        <a href="gallery.html" class="btn">View Gallery</a>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/3.jpg" alt="Travel Map">
+                        <h3>Travel Map</h3>
+                        <p>Explore where we've been and where we're heading</p>
+                        <a href="map.html" class="btn">Explore Map</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="blog" class="blog-section">
+        <section class="latest-posts">
             <div class="container">
-                <h2>Travel Blog</h2>
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-image"></div>
-                        <div class="blog-content">
-                            <h3>Our Latest Adventure</h3>
-                            <p class="blog-preview">Share your latest travel story here...</p>
-                            <a href="#" class="read-more">Read More</a>
+                <h2>Latest Adventures</h2>
+                <div class="post-preview-grid">
+                    <article class="post-preview">
+                        <img src="images/4.jpg" alt="Latest Adventure">
+                        <div class="post-content">
+                            <h3>Exploring the Hidden Beaches of Bali</h3>
+                            <p>Discovering secluded paradises and pristine waters...</p>
+                            <a href="blog/bali-beaches.html" class="read-more">Read More</a>
                         </div>
                     </article>
-                    <!-- Add more blog cards as needed -->
-                </div>
-            </div>
-        </section>
-
-        <section id="map" class="map-section">
-            <div class="container">
-                <h2>Our Travel Map</h2>
-                <div id="map-container"></div>
-                <div class="wishlist">
-                    <h3>Want to Visit</h3>
-                    <ul id="wishlist-items">
-                        <!-- Add your wishlist destinations here -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="gallery-section">
-            <div class="container">
-                <h2>Photo Gallery</h2>
-                <div class="gallery-grid">
-                    <!-- Add your gallery items here -->
-                    <div class="gallery-item">
-                        <img src="placeholder.jpg" alt="Travel Memory">
-                    </div>
-                    <!-- Repeat for more images -->
+                    <article class="post-preview">
+                        <img src="images/5.jpg" alt="Recent Adventure">
+                        <div class="post-content">
+                            <h3>Northern Lights in Iceland</h3>
+                            <p>Chasing the aurora in the land of fire and ice...</p>
+                            <a href="blog/iceland-lights.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -82,7 +81,31 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Serhan & Sara's Travel Adventures</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Two adventurous souls sharing our travel stories with the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="map.html">Travel Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Serhan & Sara's Travel Adventures</p>
+            </div>
         </div>
     </footer>
 
