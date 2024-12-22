@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Serhan & Sara's Travel Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">S&S Wanderlust</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Travel Blog</a></li>
+                <li><a href="map.html">Travel Map</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Travel Gallery</h1>
+                <p>Capturing moments from around the world</p>
+            </div>
+        </div>
+
+        <section class="gallery-grid">
+            <div class="container">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="cities">Cities</button>
+                    <button class="filter-btn" data-filter="food">Food</button>
+                    <button class="filter-btn" data-filter="culture">Culture</button>
+                </div>
+
+                <div class="masonry-grid">
+                    <div class="gallery-item" data-category="nature">
+                        <img src="images/1.jpg" alt="Travel Photo 1">
+                        <div class="overlay">
+                            <h3>Tropical Paradise</h3>
+                            <p>Bali, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cities">
+                        <img src="images/2.jpg" alt="Travel Photo 2">
+                        <div class="overlay">
+                            <h3>City Lights</h3>
+                            <p>Tokyo, Japan</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="images/3.jpg" alt="Travel Photo 3">
+                        <div class="overlay">
+                            <h3>Mountain Vista</h3>
+                            <p>Swiss Alps</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="culture">
+                        <img src="images/4.jpg" alt="Travel Photo 4">
+                        <div class="overlay">
+                            <h3>Temple Visit</h3>
+                            <p>Kyoto, Japan</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="images/5.jpg" alt="Travel Photo 5">
+                        <div class="overlay">
+                            <h3>Northern Lights</h3>
+                            <p>Iceland</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cities">
+                        <img src="images/6.jpg" alt="Travel Photo 6">
+                        <div class="overlay">
+                            <h3>Sunset Views</h3>
+                            <p>Santorini, Greece</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="food">
+                        <img src="images/7.jpg" alt="Travel Photo 7">
+                        <div class="overlay">
+                            <h3>Local Cuisine</h3>
+                            <p>Bangkok, Thailand</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="culture">
+                        <img src="images/8.jpg" alt="Travel Photo 8">
+                        <div class="overlay">
+                            <h3>Festival Time</h3>
+                            <p>Rio de Janeiro, Brazil</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="images/9.jpg" alt="Travel Photo 9">
+                        <div class="overlay">
+                            <h3>Hidden Beach</h3>
+                            <p>Phi Phi Islands, Thailand</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cities">
+                        <img src="images/10.jpg" alt="Travel Photo 10">
+                        <div class="overlay">
+                            <h3>Urban Adventure</h3>
+                            <p>New York City, USA</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="food">
+                        <img src="images/11.jpg" alt="Travel Photo 11">
+                        <div class="overlay">
+                            <h3>Street Food</h3>
+                            <p>Mexico City, Mexico</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="culture">
+                        <img src="images/12.jpg" alt="Travel Photo 12">
+                        <div class="overlay">
+                            <h3>Ancient Ruins</h3>
+                            <p>Petra, Jordan</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="images/13.jpg" alt="Travel Photo 13">
+                        <div class="overlay">
+                            <h3>Desert Safari</h3>
+                            <p>Dubai, UAE</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cities">
+                        <img src="images/14.jpg" alt="Travel Photo 14">
+                        <div class="overlay">
+                            <h3>Canal Life</h3>
+                            <p>Venice, Italy</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="culture">
+                        <img src="images/15.jpg" alt="Travel Photo 15">
+                        <div class="overlay">
+                            <h3>Market Day</h3>
+                            <p>Marrakech, Morocco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Two adventurous souls sharing our travel stories with the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="map.html">Travel Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Serhan & Sara's Travel Adventures</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
